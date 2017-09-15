@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Jeremiah D. Gamad</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navindex">
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#banner">Home</a></li>
+    	<li><a href="#skills">Skills</a></li>
+    	<li><a href="#experience">Work Experience</a></li>
+    	<li><a href="#works">My Works</a></li>
+        <li><a href="#social">Contact me!</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- /.navigation -->
+
+
+<main class="container-fluid">
+	<div class="row">
+	
+	
+	<!-- banner -->
+		<section class="col-xs-12 col-md-12 col-lg-12 one">
+			<div class="banner" id="banner"></div>
+			<div class="pinfo">
+
+		</div>
+		</section>
+
+<!-- education/experience -->
+		<section class="col-xs-12 col-md-12 col-lg-12">
+			<div class="banner" id="experience"></div>
+			<!-- timeline -->
+			<h2 class="txtcntr">Education</h2>
+				<ul class="timeline">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">BS Information Technology</span>
+								<span class="time-wrapper"><span class="time">2011-2015</span></span>
+							</div>
+							<div class="desc">
+								<p>Polytechnic University of the Philippines</p>
+								<p>Sta. Mesa, Manila</p>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Item 2 -->
+					<li>
+						<div class="direction-l">
+							<div class="flag-wrapper">
+								<span class="flag">Secondary Education</span>
+								<span class="time-wrapper"><span class="time">2007 - 2011</span></span>
+							</div>
+							<div class="desc">
+								<p>Cainta Catholic College</p>
+								<p>Cainta, Rizal</p>
+							</div>
+						</div>
+					</li>
+
+				  
+				</ul>
+				<!-- timeline -->
+			<h2 class="txtcntr">Work Experience</h2>
+				<ul class="timeline">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">Freelancer</span>
+								<span class="time-wrapper"><span class="time">2013 - present</span></span>
+							</div>
+							<div class="desc">My current employment. Way better than the position before!</div>
+						</div>
+					</li>
+				  
+					<!-- Item 2 -->
+					<li>
+						<div class="direction-l">
+							<div class="flag-wrapper">
+								<span class="flag">Lorem Inc.</span>
+								<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+							</div>
+							<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+						</div>
+					</li>
+
+					<!-- Item 3 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">Lorem University</span>
+								<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+							</div>
+							<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+						</div>
+					</li>
+				  
+				</ul>
+			
+
+<!-- 
+				<h2>Work Experience</h2>
+				<div class="try">
+					<h4><strong>Independent Contractor</strong></h4>
+					<h5>Humanatic, Inc.</h5>
+					<h5></h5>
+					<h5>Quezon City, Metro Manila</h5>
+					
+				</div>
+				<div class="try">
+					<h4><strong>C# Developer(Front End/Back End)</strong></h4>
+					<h5>G-CLAMS:Loan and Savings Management System</h5>
+					<h5>(Team G-CLAM SAD project)</h5>
+					<h5>2014</h5>
+					
+				</div>
+
+ -->
+
+
+				
+			<!-- </div>	 -->
+		</section>
+
+<!-- my skills -->
+
+		<section class="col-xs-12 col-md-12 col-lg-12">
+			<div class="banner" id="skills"></div>
+			<div class="skills">
+				<h3>My skills</h3>
+				
+				<h4>Programming Languages</h4>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-html5 fa-border" aria-hidden="true"></i><p>HTML5</p>
+					</div>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-css3 fa-border" aria-hidden="true"></i><p>CSS3</p>
+					</div>
+				<!-- </div> -->
+				<!-- <div class="col-xs-12 col-md-6 col-lg-6"> -->
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-database fa-border" aria-hidden="true"></i><p>SQL</p>
+					</div>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-code fa-border" aria-hidden="true"></i><p>BOOTSTRAP</p>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-12 col-lg-12">
+				<p><h4>Related Technologies</h4></p>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-github fa-border" aria-hidden="true"></i><p>GITHUB</p>
+					</div>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-gitlab fa-border" aria-hidden="true"></i><p>GITLAB</p>
+					</div>
+				</div>
+
+				
+			</div>	
+		</section>
+
+
+
+<!-- projects -->
+
+		<section class="col-xs-12 col-md-12 col-lg-12">
+			<div class="banner" id="works"></div>
+			<div class="works">
+				<h4>Projects</h4>
+				
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<a href="https://jgamad1011.github.io/tuitt-csp1-gamad/" target="_blank"><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<a href=""><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<a href=""><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">	
+					<a href=""><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>	
+				
+				
+			</div>	
+		</section>	
+
+<!-- contact me	 -->
+		<section class="col-xs-12 col-md-12 col-lg-12 text-center five">
+			<div class="banner" id="social"></div>
+			<div class="social text-center" id="social">
+				<img src="http://placehold.it/200x200" class="img-responsive contentctr">
+				<strong><p class="margin">Jeremiah D. Gamad</p></strong>
+				<p class="margin">Block 16, Lot 15, Katapangan Street,</p><p> Karangalan Village, Cainta, Rizal 1900</p>
+				<p>
+					<i class="fa fa-mobile fa-2x margin-rgt" aria-hidden="true"></i> 
+					<a href="tel:+639475726245">(+63) 947 - 572 - 6245</a>
+				</p>
+				<p>
+					<i class="fa fa-envelope fa-2x margin-rgt" aria-hidden="true"></i> 
+					<a href="email:j.gamad1011@gmail.com">j.gamad1011@gmail.com</a>
+				</p>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<i class="fa fa-facebook fa-border margin-rgt" aria-hidden="true"></i> 
+					<i class="fa fa-google-plus fa-border margin-rgt" aria-hidden="true"></i> 
+					<i class="fa fa-github fa-border margin-rgt" aria-hidden="true"></i>  
+					<i class="fa fa-linkedin fa-border margin-rgt" aria-hidden="true"></i> 
+				</div>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<a href="#"><button  class="btn btn-sm margin"> <i class="fa fa-file-text fa-1x margin-rgt" aria-hidden="true"></i>Download Resume</button></a>
+				</div>
+			</div>	
+		</section>
+	</div>
+
+
+<!-- footer -->
+  <footer container>
+    <div class="row">
+      <div class="col-xs-6 col-md-12 col-lg-12 text-center" id="footer">
+        <p>Copyright &copy; 2017 Jeremiah Gamad</p> 
+      </div>
+    </div>
+    
+  </footer>
+
+</main>
+
+
+
+
+
+</body>
+</html>
