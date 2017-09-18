@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Developer profile</title>
+	<title>Jeremiah D. Gamad</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
-
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      // Store hash
+      var hash = this.hash;
 
-	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
-			    navigation: {
-			    	'position': 'right',
-			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-			   	}
-			});
-	    });
-    </script>
-
-
-    
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 <body>
 
@@ -47,108 +46,233 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="#banner">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience"></a></li>
-    <li><a href="works">My Works</a></li>
-        <li id="#email"><a href="./index-contactus.html">Contact me!</a></li>
+        <li><a href="#banner">Home</a></li>
+    	<li><a href="#skills">Skills</a></li>
+    	<li><a href="#experience">Work Experience</a></li>
+    	<li><a href="#works">My Works</a></li>
+        <li><a href="#social">Contact me!</a></li>
       </ul>
     </div>
   </div>
-</nav> <!-- /.navigation -->	
+</nav> <!-- /.navigation -->
 
-	<div id="pagepiling">
-	    <div class="section three" id="section4" id="contact">
-	    	<div class="cointainer-fluid">
-	    		<div class="row ">
-					<div class="col-xs-12 col-md-12 col-lg-11">
-						<div class="skills">
-				<img src="http://placehold.it/200x200" class=" margin img-responsive pull-left">
-				<p id="psize" class="pull-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<p class="pull-left" id="psize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		
+<main class="container-fluid">
+	<div class="row">
+	
+	
+	<!-- banner -->
+		<section class="col-xs-12 col-md-12 col-lg-12 one">
+			<div class="banner" id="banner"></div>
+			<div class="pinfo">
+				Hi!
+				<h4>I am Jeremiah an aspiring web developer currently training at Tuitt.</h4>
+				 <a href="#social"><button  class="btn btn-sm margin"> <strong>Contact me!</strong></button></a>
+
+
+		</div>
+		</section>
+
+<!-- education/experience -->
+		<section class="col-xs-12 col-md-12 col-lg-12">
+			<div class="banner" id="experience"></div>
+			<!-- timeline -->
+			<h2 class="txtcntr">Education</h2>
+				<ul class="timeline">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">BS Information Technology</span>
+								<span class="time-wrapper"><span class="time">2011-2015</span></span>
+							</div>
+							<div class="desc">
+								<p>Polytechnic University of the Philippines</p>
+								<p>Sta. Mesa, Manila</p>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Item 2 -->
+					<li>
+						<div class="direction-l">
+							<div class="flag-wrapper">
+								<span class="flag">Secondary Education</span>
+								<span class="time-wrapper"><span class="time">2007 - 2011</span></span>
+							</div>
+							<div class="desc">
+								<p>Cainta Catholic College</p>
+								<p>Cainta, Rizal</p>
+							</div>
+						</div>
+					</li>
+
+				  
+				</ul>
+				<!-- timeline -->
+			<h2 class="txtcntr">Work Experience</h2>
+				<ul class="timeline">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">Independent Contractor</span>
+								<span class="time-wrapper"><span class="time">2015 - present</span></span>
+							</div>
+							<div class="desc">Independent Contract at Humanatic, Inc. reviewing and summarizing calls for statistical use.</div>
+						</div>
+					</li>
+					<li>
+						<div class="direction-l">
+							<div class="flag-wrapper">
+								<span class="flag">Tech Support (OJT)</span>
+								<span class="time-wrapper"><span class="time">November 2014 - March 2015</span></span>
+							</div>
+							<div class="desc">On-the-job training as Tech Support at Department of Education-Region IV-A Office. (COA Department)</div>
+						</div>
+					</li>
+				  
+			
+				  
+				</ul>
+			
+
+<!-- 
+				<h2>Work Experience</h2>
+				<div class="try">
+					<h4><strong>Independent Contractor</strong></h4>
+					<h5>Humanatic, Inc.</h5>
+					<h5></h5>
+					<h5>Quezon City, Metro Manila</h5>
+					
+				</div>
+				<div class="try">
+					<h4><strong>C# Developer(Front End/Back End)</strong></h4>
+					<h5>G-CLAMS:Loan and Savings Management System</h5>
+					<h5>(Team G-CLAM SAD project)</h5>
+					<h5>2014</h5>
+					
+				</div>
+
+ -->
+
+
+				
+			<!-- </div>	 -->
+		</section>
+
+<!-- my skills -->
+
+		<section class="col-xs-12 col-md-12 col-lg-12">
+			<div class="banner" id="skills"></div>
+			<div class="skills">
+				<h3>My skills</h3>
+				
+				<h4>Programming Languages</h4>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-html5 fa-3x fa-border" aria-hidden="true"></i><p>HTML5</p>
+					</div>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-css3 fa-3x fa-border" aria-hidden="true"></i><p>CSS3</p>
+					</div>
+				<!-- </div> -->
+				<!-- <div class="col-xs-12 col-md-6 col-lg-6"> -->
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-database fa-3x fa-border" aria-hidden="true"></i><p>SQL</p>
+					</div>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-code fa-3x fa-border" aria-hidden="true"></i><p>BOOTSTRAP</p>
 					</div>
 				</div>
-	    	</div>
-	 		
-	    </div>
-	    <div class="section" id="section">
-	    	<div class="container-fluid">
-	    		<div class="row">
-	    			<div class="col-xs-12 col-md-12 col-lg-11">
-				    	<div class="education text-center" id="">
-							
-							<h2>Education/Trainings</h2>
-							<div class="try">
-								<h4><strong>Tuitt Coding Bootcamp</strong></h4>
-								<h5>Tuitt Incorporated</h5>
-								<h5>Quezon City, Metro Manila</h5>
-								
-							</div>
-							<div class="try">
-								<h4><strong>BS Information Technology</strong></h4>
-								<h5>Polytechnic University of the Philippines</h5>
-								<h5>Sta. Mesa, Manila City</h5>
-								<h5>2011 - 2015</h5>
-							</div>
-							<div class="try">
-								<h4><strong>Secondary Education</strong></h4>
-								<h5>Cainta Catholic College</h5>
-								<h5>Cainta, Rizal</h5>
-								<h5>2007 - 2011</h5>
-							</div>
-							<h2>Work Experience</h2>
-							<div class="try">
-								<h4><strong>Independent Contractor</strong></h4>
-								<h5>Humanatic, Inc.</h5>
-								<h5></h5>
-								<h5>Quezon City, Metro Manila</h5>
-								
-							</div>
-							<div class="try">
-								<h4><strong>C# Developer(Front End/Back End)</strong></h4>
-								<h5>G-CLAMS:Loan and Savings Management System</h5>
-								<h5>(Team G-CLAM SAD project)</h5>
-								<h5 class="txtcntr">2014</h5>
-								
-							</div>
-				    	</div>
+				
+				<div class="col-xs-12 col-md-12 col-lg-12">
+				<p><h4>Related Technologies</h4></p>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-github fa-3x fa-border" aria-hidden="true"></i><p>GITHUB</p>
 					</div>
-	    		</div>
-	    	</div>
-	    </div>
-	    <div class="section" id="section4">
-	    	<div class="intro">
-	    		awdasdawdasd
-	    	</div>
-	    </div>
-	    <div class="section" id="section4">
-	    	<div class="intro">
-	    		awdasdawdawdasd
-	    	</div>
-	    </div>
-	    <div class="section two" id="section4">
-	    	<div class="intro">
-	    		awdasdawdasd
-	    	</div>
-	    </div>
-	    <div class="section three" id="section4">
-	    	<div class="intro">
-	    		awdasdawdasd
-	    	</div>
-	    </div>
+					<div class="skilcontainer pull-left margin-rgt">
+						<i class="fa fa-gitlab fa-3x fa-border" aria-hidden="true"></i><p>GITLAB</p>
+					</div>
+				</div>
+
+				
+			</div>	
+		</section>
+
+
+
+<!-- projects -->
+
+		<section class="col-xs-12 col-md-12 col-lg-12">
+			<div class="banner" id="works"></div>
+			<div class="works">
+				<h4>Projects</h4>
+				
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<a href="https://jgamad1011.github.io/tuitt-csp1-gamad/" target="_blank"><img src="./images/capstone1.png" class="workimg margin img-responsive"></a>
+					
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<a href=""><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<a href=""><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">	
+					<a href=""><img src="./images/bg-profile.jpg" class="workimg margin img-responsive"></a>
+				</div>	
+				
+				
+			</div>	
+		</section>	
+
+<!-- contact me	 -->
+		<section class="col-xs-12 col-md-12 col-lg-12 text-center five">
+			<div class="banner" id="social"></div>
+			<div class="social text-center" id="social">
+				<img src="http://placehold.it/200x200" class="img-responsive contentctr">
+				<strong><p class="margin">Jeremiah D. Gamad</p></strong>
+				<p class="margin">Block 16, Lot 15, Katapangan Street,</p><p> Karangalan Village, Cainta, Rizal 1900</p>
+				<p>
+					<i class="fa fa-mobile fa-2x margin-rgt" aria-hidden="true"></i> 
+					<a href="tel:+639475726245">(+63) 947 - 572 - 6245</a>
+				</p>
+				<p>
+					<i class="fa fa-envelope fa-2x margin-rgt" aria-hidden="true"></i> 
+					<a href="email:j.gamad1011@gmail.com">j.gamad1011@gmail.com</a>
+				</p>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<i class="fa fa-facebook fa-border margin-rgt" aria-hidden="true"></i> 
+					<i class="fa fa-google-plus fa-border margin-rgt" aria-hidden="true"></i> 
+					<i class="fa fa-github fa-border margin-rgt" aria-hidden="true"></i>  
+					<i class="fa fa-linkedin fa-border margin-rgt" aria-hidden="true"></i> 
+				</div>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<a href="#"><button  class="btn btn-sm margin"> <i class="fa fa-file-text fa-1x margin-rgt" aria-hidden="true"></i>Download Resume</button></a>
+				</div>
+			</div>	
+		</section>
+	</div>
+
+
+<!-- footer -->
+  <footer container>
+    <div class="row">
+      <div class="col-xs-6 col-md-12 col-lg-12 text-center" id="footer">
+        <p>Copyright &copy; 2017 Jeremiah Gamad</p> 
+      </div>
+    </div>
+    
+  </footer>
+
+</main>
+
+
+
 
 
 </body>
