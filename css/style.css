@@ -90,6 +90,9 @@ img:hover{
 
 }
 
+.no-margin{
+	margin: 0;
+}
 #formalpic{
 	border-radius: 50%;
 }
@@ -102,7 +105,21 @@ img:hover{
 .fa-html5{
 	font-size: 4em;
 }
-
+.bounceInLeft{
+	-webkit-animation-delay: 0.3s;
+}
+.bounceInDown{
+	-webkit-animation-delay: 0.5s;
+}
+.bounceInRight{
+	-webkit-animation-delay: 0.7s;
+}
+.direction-r{
+	-webkit-animation-delay: 0.3s;
+}
+.direction-l{
+	-webkit-animation-delay: 0.3s;
+}
 
 /*margin and padding css*/
 
