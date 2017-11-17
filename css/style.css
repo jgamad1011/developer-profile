@@ -20,13 +20,13 @@ body{
 
 
 section{
-	height: 1080px;
+	/*height: 1080px;*/
 	width: 100%;
 	margin: 0 auto;
 }
 
 .banner{
-	height: 250px;
+	height: 50px;
 	width: 100%;
 }
 hr{
@@ -48,7 +48,7 @@ img:hover{
     /*filter:brightness(70%); */
 
     /* Set a specific height */
-    height: 1080px; 
+    height: 100vh; 
 
     /* Create the parallax scrolling effect */
     background-position: center;
@@ -57,35 +57,10 @@ img:hover{
 }
 
 
-.two{
-	width: 100%;
-	height: 1000px;
-	background-color: red;
 
-}
-.twotwo{
-	width: 300px;
-	height: 300px;
-	background-color: red;
-
-}
-
-.three{
-	width: 100%;
-	height: 1000px;
-	background-color: blue;
-
-}
-
-.four{
-	width: 100%;
-	height: 1000px;
-	background-color: yellow;
-
-}
 .five{
 	width: 100%;
-	height: 1000px;
+	height: 100vh;
 	background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
 
 }
@@ -169,9 +144,7 @@ img:hover{
 .profpic{
 	margin: 0 auto;
 }
-.pinfo{
-	
-}
+
 .pinfopic{
 	display: inline-block;
 }
@@ -184,6 +157,7 @@ img:hover{
 	color: #fff;
 	font-size: 100px;
 	text-align: center;
+	padding-top: 1.2em;
 
 }
 a:link{
@@ -203,10 +177,6 @@ a:link{
 	width: 500px;
 	margin: 0 auto;
 }
-.works{
-	width: 500px;
-	margin: 0 auto;
-}
 .social{
 	width: 500px;
 	margin: 0 auto;
@@ -218,11 +188,6 @@ a:link{
 
 .contentctr{
 	margin: 0 auto;
-}
-
-.workimg{
-	width: 200px;
-	height: 200px;
 }
 
 .fa-file-text{
@@ -243,6 +208,7 @@ footer{
    width:100%;
    height:70px;
    padding: 0;
+   
 }
 footer p{
   background-color: black;
@@ -255,9 +221,26 @@ footer p{
   /*position: relative;*/
   /*bottom: 0;*/
 }
+section{
+	clear:both;
+}
 
 
 
+#works{
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	height: 100%;
+	clear: both;
+}
+
+#skills{
+	margin-top: 1em;
+	width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+}
 
 
 /* ================ The Timeline ================ */
